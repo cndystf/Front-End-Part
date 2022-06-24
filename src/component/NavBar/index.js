@@ -60,7 +60,7 @@ export default function NavBar() {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="light" variant='light'>
                 <Container>
-                    <Navbar.Brand href="#home"><a href="/"><img src={icon} alt="" /></a></Navbar.Brand>
+                    <Navbar.Brand href="#home"><a href="/buyer"><img src={icon} alt="" /></a></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

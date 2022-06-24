@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+/* responsive */
+/* @media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: auto !important;
+    }
+} */
+
+/* @media (min-width: 768px) {
+    .offset-md-6 {
+        margin-right: 50% !important;
+    }
+} */
+
+/* banner and title */
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* navbar */
+.navbar {
+    background-color: #f5f5f5a1;
+    ;
+}
+
+.navbar .form-control {
+    background-color: #EEEEEE;
+    width: 150%;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+ /* login form */
+ .login .container {
+    padding : 0px;
+    margin: 0px;
+ }
+
+.login-form {
+    width: 50%;
+    margin-left: 200px;
+    padding-top: 50%;
+}
+
+.form-edit {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.form-control py-3 {
+    width: 150% !important;
+}
+
+.login-button {
+    background-color: #7126B5;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    width: 150%;
+}
+
+/* register form */
+.register .container {
+    padding : 0px;
+    margin: 0px;
+ }
+
+.register-form {
+    width: 50%;
+    margin-left: 200px;
+    padding-top: 50%;
+}
+
+.register-button {
+    background-color: #7126B5;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    width: 150%;
+}
+
+/* buyer/halaman produk */
+.buyer-halaman-produk {
+    margin-top:30px;
+}
+
+.product-description .card {
+    /* width:50%; */
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    text-align: justify;
+    font-size: 14px;
+    padding:5px 5px 0px 5px;
+}
+
+.about-product .card {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bargain-button {
+    background-color: #7126B5;
+    border-style: none;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.about-seller .card {
+    border-radius: 10px;
+    margin-top:10px;
+    padding: 10px;
+}
+
+.about-seller .buyer-detail {
+    margin: 25px 35px 0px 70px;
+    position: absolute;
+}
+
+.about-seller .buyer-pic {
+    float: left;
+    margin: 0;
+    padding: 25px 5px 5px 5px;
+}
+ 
+/* modal for bargain */
+.modal-tawar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -200px;
+    margin-right: 280px;
+    margin-top: 300px;
+    position: absolute;
+}
+
+.modal-tawar .container {
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.close-button {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.close-button button {
+    border: none;
+    background-color: #ffffff;
+}
+
+.detail-product .card {
+    border-radius: 10px;
+    margin-top:10px;
+    padding: 10px;
+}
+
+.detail-product .product-pic {
+    position: absolute;
+}
+
+.detail-product .product-bargain {
+    padding-left: 60px;
+}
+
+.form-bargain {
+    margin-top: 10px;
+}
+
+.bargain-price-btn {
+    background-color: #7126B5;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: #ffffff!important;
+}
+
+/* when bargain process succeed */
+.success-modal .container{
+    width: 75vh;
+    height: 5vh;
+    border-radius: 12px;
+    display: flex;
+    background-color: #73CA5C;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.close-btn button {
+    border: none;
+    background-color: #73CA5C;
+    color: #ffffff;
+    padding-left: 200px;
+}
+
+.disable-bargain-button {
+    background-color: #D0D0D0;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;        
+    text-decoration: none;
+}
+
+/* modal notifikasi buyer */
+
+
+/* .mr-20 {
+    margin-right: 20px !important;
+  } */

@@ -11,6 +11,10 @@ import {
 
 import { LandingPage, HalamanProduk, InfoProduk, DaftarJual } from './component';
 import { InfoProfil } from './component';
+import { Login } from './component';
+import { Register } from './component';
+import { Buyer } from './component'
+import { StatusSuccess } from './component'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,10 +22,14 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/halamanproduk" element={<HalamanProduk />} />
       <Route path="/infoprofil" element={<InfoProfil />} />
       <Route path="/infoproduk" element={<InfoProduk />} />
       <Route path="/daftarjual" element={<DaftarJual />} />
+      <Route path="/buyer" element={<Buyer />} />
+      <Route path="/bargainsuccess" element={<StatusSuccess />} />
     </Routes>
   </BrowserRouter>
 );

@@ -7,63 +7,63 @@ import profilpenjual from '../../images/profilpenjual.png';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
 
-function ModalSukses(props) {
-    return (
-        <Modal
-            {...props}
-        >
-            <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    <h6>Harga tawarmu berhasil dikirim ke penjual</h6>
-                </Modal.Title>
-            </Modal.Header>
-        </Modal>
-    )
-}
+// function ModalSukses(props) {
+//     return (
+//         <Modal
+//             {...props}
+//         >
+//             <Modal.Header closeButton>
+//                 <Modal.Title id="contained-modal-title-vcenter">
+//                     <h6>Harga tawarmu berhasil dikirim ke penjual</h6>
+//                 </Modal.Title>
+//             </Modal.Header>
+//         </Modal>
+//     )
+// }
 
-function ModalTawar(props) {
-    const [modalShow2, setModalShow2] = React.useState(false);
-    return (
-        <Modal
-            {...props}
-            size="sm"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-        >
-            <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                    <h6>Masukkan Harga Tawarmu</h6>
-                </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <p className="" style={{ fontSize: '14px' }}>
-                    Harga tawaranmu akan diketahui penual, jika penjual cocok kamu akan segera dihubungi penjual.
-                </p>
-                <div className="row p-1">
-                    <div className="col-3 m-auto ">
-                        <img src={profilpenjual} alt='profilpenjual' className="" style={{ widht: '48' }} />
-                    </div>
-                    <div className="col-9 " style={{ fontSize: '14px', lineHeight: '20px', paddingTop: '18px', paddingLeft: '5px' }}>
-                        <b className="">Jam Tangan Casio</b>
-                        <p>Rp 250.000</p>
-                    </div>
-                </div>
-                <div>
-                    <form>
-                        <div class="mb-3">
-                            <label for="harga_tawar" class="form-label">Harga Tawar</label>
-                            <input type="text" class="form-control rounded " id="harga_tawar" placeholder="Rp 0,00" />
-                        </div>
-                        <button type="submit" class="btn btn-custom me-3 mb-2 " onClick={props.onHide}>Kirim</button>
-                    </form>
-                </div>
-            </Modal.Body>
-            {/* <Modal.Footer>
-                <Button onClick={props.onHide}>Close</Button>
-            </Modal.Footer> */}
-        </Modal>
-    )
-}
+// function ModalTawar(props) {
+//     const [modalShow2, setModalShow2] = React.useState(false);
+//     return (
+//         <Modal
+//             {...props}
+//             size="sm"
+//             aria-labelledby="contained-modal-title-vcenter"
+//             centered
+//         >
+//             <Modal.Header closeButton>
+//                 <Modal.Title id="contained-modal-title-vcenter">
+//                     <h6>Masukkan Harga Tawarmu</h6>
+//                 </Modal.Title>
+//             </Modal.Header>
+//             <Modal.Body>
+//                 <p className="" style={{ fontSize: '14px' }}>
+//                     Harga tawaranmu akan diketahui penual, jika penjual cocok kamu akan segera dihubungi penjual.
+//                 </p>
+//                 <div className="row p-1">
+//                     <div className="col-3 m-auto ">
+//                         <img src={profilpenjual} alt='profilpenjual' className="" style={{ widht: '48' }} />
+//                     </div>
+//                     <div className="col-9 " style={{ fontSize: '14px', lineHeight: '20px', paddingTop: '18px', paddingLeft: '5px' }}>
+//                         <b className="">Jam Tangan Casio</b>
+//                         <p>Rp 250.000</p>
+//                     </div>
+//                 </div>
+//                 <div>
+//                     <form>
+//                         <div class="mb-3">
+//                             <label for="harga_tawar" class="form-label">Harga Tawar</label>
+//                             <input type="text" class="form-control rounded " id="harga_tawar" placeholder="Rp 0,00" />
+//                         </div>
+//                         <button type="submit" class="btn btn-custom me-3 mb-2 " onClick={props.onHide}>Kirim</button>
+//                     </form>
+//                 </div>
+//             </Modal.Body>
+//             {/* <Modal.Footer>
+//                 <Button onClick={props.onHide}>Close</Button>
+//             </Modal.Footer> */}
+//         </Modal>
+//     )
+// }
 
 export default function HalamanProduk() {
     const [modalShow, setModalShow] = React.useState(false);
@@ -98,13 +98,13 @@ export default function HalamanProduk() {
                                 id="Edit"
                             > Edit
                             </button>
-                            <p>or</p>
+                            {/* <p>or</p>
                             <button
                                 className="btn btn-custom me-3 mb-2 "
                                 onClick={() => setModalShow(true)}
                                 id="Terbitkan"
                             > Saya tertarik dan ingin nego
-                            </button>
+                            </button> */}
 
                         </div>
                         <div className="card">
@@ -121,12 +121,12 @@ export default function HalamanProduk() {
                     </div>
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <ModalTawar
                     show={modalShow}
                     onHide={() => setModalShow(false)}
                 />
-            </div>
+            </div> */}
 
         </div>
     )
