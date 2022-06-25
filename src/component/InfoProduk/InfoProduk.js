@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Rectangle127 from "../../images/Rectangle127.svg"
+import rectangle from "../../images/rectangle-purple.png"
 
 export default function InfoProduk() {
     return (
@@ -8,7 +8,7 @@ export default function InfoProduk() {
 
             <nav className="navbar navbar-expand-lg bg-light d-inline-flex" style={{ justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                 <div className="d-inline-flex" style={{ padding: '10px', justifyContent: 'center', alignItems: 'center' }}>
-                    <a className="navbar-brand" href="/"><img src={Rectangle127} alt='' />
+                    <a className="navbar-brand" href="/"><img src={rectangle} alt='' />
                     </a>
                 </div>
 

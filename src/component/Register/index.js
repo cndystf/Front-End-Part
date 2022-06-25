@@ -1,6 +1,6 @@
 // import React from 'react';
-import banner from "../../images/second_hand_img.png"
-import "../../../src/style.css";
+import banner from "../../images/secondhand.png"
+import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Register from './components/Register';
 import { Link } from "react-router-dom";

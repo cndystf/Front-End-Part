@@ -1,6 +1,6 @@
 // import React from 'react';
-import banner from "../../images/second_hand_img.png"
-import "../../../src/style.css";
+import banner from "../../images/secondhand.png"
+import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Register from './components/Register';
 import { Link } from "react-router-dom";
@@ -32,7 +32,7 @@ export default function Login() {
                                 <input type="password" className="form-control py-3" placeholder="Masukkan Password" aria-label="Password" />
                                 </form>
                             </div>
-                            <Link to="/"><button className="login-button">Masuk</button></Link>
+                            <Link to="/home"><button className="login-button">Masuk</button></Link>
                             <div>
                             <h6>Belum punya akun?</h6> <Link to="/register"><span style={{color:"#7126B5"}}>Daftar di sini</span></Link>
                             {/* <h6>Belum punya akun?</h6> <Link to="/register"><span style={{color:"#7126B5"}}>Daftar di sini</span></Link> */}

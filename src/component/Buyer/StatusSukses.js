@@ -1,16 +1,18 @@
 import React from 'react'
-import "../../../src/style.css";
+import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import NavBar from "../NavBar";
+// import NavBar from "../NavBar";
 // import ModalSuccess from './BuyermodalSuccess';
 
-import jam from "../../images/casio.png";
-import buyer from "../../images/buyer.png";
+import jam from "../../images/halamanproduk.png";
+import buyer from "../../images/seller.png";
+
+import Navigation from "../Navigation/Navigation";
 
 export default function StatusSuccess ({ closeModalSuccess }) {
     return(
-        <><NavBar />
+        <><Navigation />
         {/* <ModalSuccess /> */}
         <div className="buyer-halaman-produk">
             <div className="container">

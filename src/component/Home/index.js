@@ -1,17 +1,16 @@
 import React from "react";
 import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from "../NavBar/NavBar";
+import Navigation from "../Navigation/Navigation";
 import CarouselBanner from "../Carousel/Carousel";
 import { FiSearch } from "react-icons/fi";
 import Rectangle from '../../images/Rectangle 23.png';
 
-
-export default function LandingPage() {
+export default function Home() {
     return (
         <div>
             <div>
-                <NavBar />
+                <Navigation />
             </div>
             <div className="row">
                 <CarouselBanner />

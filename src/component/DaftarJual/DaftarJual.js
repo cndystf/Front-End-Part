@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "../NavBar";
+import Navigation from "../Navigation/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import profilpenjual from '../../images/profilpenjual.png';
-import "../../App.css";
+import profilpenjual from '../../images/seller.png';
+import "../../css/style.css"
 import { FiBox, FiHeart, FiDollarSign, FiChevronRight, FiPlus } from "react-icons/fi";
 import Rectangle from '../../images/Rectangle 23.png';
 
@@ -12,7 +12,7 @@ export default function DaftarJual() {
     return (
         <div className="container">
             <div>
-                <NavBar />
+                <Navigation />
             </div>
             <div>
                 <p className="fw-bold my-3">Daftar Jual Saya</p>

@@ -3,7 +3,7 @@ import sosmed_facebook from '../../images/sosmed-facebook.png';
 import sosmed_instagram from '../../images/sosmed-instagram.png';
 import sosmed_twitter from '../../images/sosmed-twitter.png';
 import sosmed_whatsapp from '../../images/sosmed-whatsapp.png';
-import kotakbiru from '../../images/kotakbiru.svg';
+import kotakbiru from '../../images/rectangle-purple.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Footer() {

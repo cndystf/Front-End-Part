@@ -1,24 +1,24 @@
 import React from 'react'
 import { useState } from "react";
-import "../../../src/style.css";
+import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import ModalTawar from "../BuyerModalTawar";
-import jam from "../../images/casio.png";
-import buyer from "../../images/buyer.png";
+import ModalTawar from "./ModalTawar";
+import jam from "../../images/halamanproduk.png";
+import seller from "../../images/seller.png";
 
-import NavBar from "../NavBar";
+import Navigation from "../Navigation/Navigation";
 
 export default function BuyerHalamanProduk() {
 
     const [openModalTawar, setOpenModalTawar] = useState(false);
 
     return(
-        <><NavBar />
+        <><Navigation />
         <div className="buyer-halaman-produk">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 sm-12">
+                    <div className="col-xl-6 col-sm-12">
                         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                             <div className="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -82,10 +82,10 @@ export default function BuyerHalamanProduk() {
                         </div>
                         <div className="about-seller">
                             <div className="card">
-                                <div className="buyer-pic">
-                                    <img src={buyer} alt="..." width="48px" height="48px" />
+                                <div className="seller-pic">
+                                    <img src={seller} alt="..." width="48px" height="48px" />
                                 </div>
-                                <div className="buyer-detail">
+                                <div className="seller-detail">
                                     <p><span style={{ fontWeight: "bold" }}>Nama Penjual</span>
                                         <br></br>Aksesoris</p>
                                 </div>

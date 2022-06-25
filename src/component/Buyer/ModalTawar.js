@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from "react";
-import "../../../src/style.css";
+import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import product from "../../images/product.png";
+import product from "../../images/exp-product.png";
 import { Link } from "react-router-dom"
 
 // import ModalSuccess from './BuyermodalSuccess';
-import StatusSuccess from '../BuyerStatusSuccess';
+import StatusSuccess from './StatusSukses';
 
 export default function ModalTawar ({ closeModalTawar }){
 
@@ -38,7 +38,7 @@ export default function ModalTawar ({ closeModalTawar }){
                             </div>
                         </div>
 
-                    <Link to="/bargainsuccess" className="bargain-price-btn"
+                    <Link to="/bargain-success" className="bargain-price-btn"
                     onClick={() => { 
                     setOpenModalSuccess(true);
                     }}> Kirim</Link>
