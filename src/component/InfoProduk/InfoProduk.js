@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rectangle from "../../images/rectangle-purple.png"
+import arrow from "../../images/fi_arrow-left.png";
 
 export default function InfoProduk() {
     return (
@@ -14,10 +15,10 @@ export default function InfoProduk() {
 
             </nav>
 
-
             <section>
                 <form>
                     <div className="container" style={{ padding: '30px', width: '70%' }}>
+                    <a href="/home"> <img src={arrow} alt="" /></a>
                         <div className="mb-3">
                             <label for="namaproduk" className="form-label">Nama Produk<span style={{ color: 'red' }}>*</span></label>
                             <input type="text" className="form-control" id="namaproduk" placeholder="Nama Produk" required />

@@ -25,6 +25,8 @@ import HalamanProdukBuyer from './component/Buyer/HalamanProduk';
 import HalamanProdukSeller from './component/Seller/HalamanProduk';
 import StatusSuccess from './component/Buyer/StatusSukses';
 
+import Product from './component/InfoProduk/InfoProduk';
+import StatusPenawar from './component/Seller/PenawaranDiterima';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,7 +38,10 @@ root.render(
       <Route path="/home" element={<Home />} />
       <Route path="/list" element={<DaftarJual />} />
       <Route path="/user" element={<User />} />
-      {/* lanjutinn di bawah sini buat test route/ngeliat page*/}
+      {/* lanjutinn di bawah sini. buat test route/ngeliat page*/}
+      <Route path="/edit-product" element={<Product />} />
+      <Route path="/penawar" element={<StatusPenawar />} />
+
       <Route path="/seller" element={<HalamanProdukSeller />} />
       <Route path="/buyer" element={<HalamanProdukBuyer />} />
       <Route path="/bargain-success" element={<StatusSuccess />} />

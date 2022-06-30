@@ -6,6 +6,8 @@ import "../../css/style.css"
 import { FiBox, FiHeart, FiDollarSign, FiChevronRight, FiPlus } from "react-icons/fi";
 import Rectangle from '../../images/Rectangle 23.png';
 
+import { Link } from 'react-router-dom';
+
 
 
 export default function DaftarJual() {
@@ -25,7 +27,7 @@ export default function DaftarJual() {
                         <p className="mb-1" style={{ fontSize: '10px' }}>Kota</p>
                     </div>
                     <div className="col-xl-1  col-sm-3 col-1">
-                        <button className="btn btn-custom borderradius8">edit</button>
+                        <Link to="/edit-product"><button className="btn btn-custom borderradius8">edit</button></Link>
                     </div>
                 </div>
             </div>
