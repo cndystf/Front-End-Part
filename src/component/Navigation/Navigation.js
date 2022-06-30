@@ -15,6 +15,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import list from "../../images/fi_list.svg";
 import user from "../../images/fi_user.svg";
 import notification from "../../images/fi_bell.svg";
+
+import product from "../../images/exp-product.png";
 // import search from "../../src/images/fi_search.svg"
 
 export default function Navbar() {
@@ -40,7 +42,40 @@ export default function Navbar() {
                                     <NavLink to="/list" className="nav-link" aria-current="page"><img src={list} alt=""/></NavLink>
                                 </li>
                                 <li className="nav-item mx-1">
-                                    <NavLink to="/home" className="nav-link"><img src={notification} alt=""/></NavLink>
+                                    <a href="#notification" className="nav-link"><img src={notification} alt=""/></a>
+                                    <a href="#" id="notification">
+                                        <div className="notification-card">
+                                            <div className="notification">
+                                                <img src= {product} alt="product" />
+                                                <div className="title">
+                                                    <p>Penawaran produk</p>
+                                                </div>   
+                                                <div className="date">
+                                                    <p>20 Apr, 14:04</p>
+                                                </div>    
+                                                <div className="detail">
+                                                    <p>Jam tangan Casio
+                                                    <br /><br />Rp 250.000
+                                                    <br /><br />Ditawar Rp 200.000</p> 
+                                                </div> 
+                                            </div>
+                                            <br />
+                                            <div className="notification">
+                                                <img src={product} alt="product" />
+                                                    <div className="title">
+                                                        <p>Berhasil diterbitkan</p>
+                                                    </div>   
+                                                    <div className="date">
+                                                        <p>19 Apr, 14:04</p>
+                                                    </div>    
+                                                    <div className="detail">
+                                                    <p>Jam tangan Casio
+                                                    <br /><br />Rp 250.000
+                                                    </p> 
+                                                    </div> 
+                                            </div>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li className="nav-item mx-1">
                                     <NavLink to="/user" className="nav-link"><img src={user} alt=""/></NavLink>
