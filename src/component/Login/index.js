@@ -11,11 +11,7 @@ export default function Login() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 sm-12"> 
-                        {/* <img src={banner} alt=""/> */}
-                        <div className="banner-img">
-                            {/* <img src={banner} width="100%"alt=""/> */}
-                            <img src={banner} alt=""/>
-                        </div>
+                        <img src={banner} alt="" style={{ width:"100%", height: "100vh" }}/>
                     </div>
                     <div className="col-md-6 sm-12">
                         <div className="login-form">
@@ -33,8 +29,9 @@ export default function Login() {
                                 </form>
                             </div>
                             <Link to="/home"><button className="login-button">Masuk</button></Link>
-                            <div>
-                            <h6>Belum punya akun?</h6> <Link to="/register"><span style={{color:"#7126B5"}}>Daftar di sini</span></Link>
+                            <div className="d-flex">
+                                <p className="mb-0 me-2">Belum punya akun?</p>
+                                <Link to="/register">Daftar di sini</Link>
                             {/* <h6>Belum punya akun?</h6> <Link to="/register"><span style={{color:"#7126B5"}}>Daftar di sini</span></Link> */}
                             </div>
                         </div>
