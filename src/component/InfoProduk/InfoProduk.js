@@ -6,13 +6,12 @@ import arrow from "../../images/fi_arrow-left.png";
 export default function InfoProduk() {
     return (
         <div>
-
+            
             <nav className="navbar navbar-expand-lg bg-light d-inline-flex" style={{ justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                 <div className="d-inline-flex" style={{ padding: '10px', justifyContent: 'center', alignItems: 'center' }}>
                     <a className="navbar-brand" href="/"><img src={rectangle} alt='' />
                     </a>
                 </div>
-
             </nav>
 
             <section>

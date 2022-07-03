@@ -4,8 +4,17 @@ import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Register from './components/Register';
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { BsEyeSlash } from "react-icons/bs";
+import { BsEye } from "react-icons/bs";
+
 
 export default function Login() {
+    let [showPassword, setShowPassword] = useState(false);
+    const checkShowPassword = () => {
+        setShowPassword(!showPassword);
+    }
+
     return(
         <div className="login">
             <div className="container">
@@ -14,19 +23,16 @@ export default function Login() {
                         <img src={banner} alt="" style={{ width:"100%", height: "100vh" }}/>
                     </div>
                     <div className="col-md-6 sm-12">
-                        <div className="login-form">
+                        <div className="login-part">
                             <span className="title-text">Masuk</span>
-                            <div className="form-edit">
-                                <form>
+                            <div className="form-email">
                                 <label for="form_email" className="form-label">Email</label>
                                 <input type="email" className="form-control py-3" placeholder="Contoh: johndee@gmail.com" aria-label="Email" />
-                                </form>
                             </div>
-                            <div className="form-edit">
-                                <form>
+                            <div className="form-pw">
                                 <label for="form_password" className="form-label">Password</label>
-                                <input type="password" className="form-control py-3" placeholder="Masukkan Password" aria-label="Password" />
-                                </form>
+                                <input type={showPassword ? "password":"text"} className="form-control py-3" placeholder="Masukkan Password" aria-label="Password" />
+                                <button className="btn-eye">{showPassword ? <BsEyeSlash onClick={checkShowPassword} /> : <BsEye onClick={checkShowPassword} />}</button>
                             </div>
                             <Link to="/home"><button className="login-button">Masuk</button></Link>
                             <div className="d-flex">

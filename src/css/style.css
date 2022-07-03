@@ -13,7 +13,6 @@ body{
 }
 
 /* bagian indah */
-
 .buttonradius12 {
     border-radius: 12px !important
 }
@@ -138,6 +137,81 @@ body{
     color: rgba(113, 38, 181, 1);
 }
 
+/* daftar jual */
+.info-seller .card {
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info-seller .card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+    
+.info-seller .card-text {
+    color: #8A8A8A;
+    font-size:10px;
+}
+
+.daftar-jual {
+    margin-left: 12px;
+}
+
+.table-category a {
+    color:#000000;
+    text-decoration: none;
+}
+
+.table-category a:hover {
+    color:#7122B5;
+}
+
+.table-category td {
+    padding: 5px;
+}
+
+.button-edit {
+    float: right;
+    border-color: #7122b5;
+    border-radius: 5px;
+    width: 60px;
+    background-color: #ffffff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* start seller/halaman produk */
+.seller-halaman-produk .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin:auto;
+    margin-top:20px;
+    width: 80%;
+}
+
+.btn-publish {
+    background-color: #7126B5;
+    border-style: none;
+    margin: 20px 20px 5px 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-edit {
+    width: 90%;
+    background-color: #ffffff;
+    margin: 5px 20px 20px 20px;
+    border-radius: 10px;
+    border-color: #7126B5;
+    color: #7126B5;
+    padding: 10px;
+    font-size: 14px;
+}
+/* end */
 
 
 
@@ -226,10 +300,54 @@ body{
 /* end */
 
  /* start login & register */
-
 .title-text {
     font-weight: bold;
     font-size: 20px;
+}
+
+.form-name {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.form-name .form-control {
+    width:150%;
+}
+
+.form-email {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.form-email .form-control {
+    width: 150%;
+}
+
+.form-pw {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.form-pw .form-control {
+    width: 150%;
+}
+
+.login .btn-eye {
+    margin: 0 auto;
+    border-style: none;
+    background-color: #ffffff;
+    top: 52%;
+    right: 20%;
+    position: absolute;
+}
+
+.d-flex a {
+    text-decoration: none;
+    color:#7122B5;
+}
+
+.d-flex a:hover {
+    color:#7122B5 !important;
 }
 
 .login .container {
@@ -237,19 +355,10 @@ body{
     padding: 0;
 }
 
-.login-form {
+.login-part {
     width: 50%;
     margin-left: 100px;
     margin-top: 130px;
-}
-
-.form-control {
-    width: 150% !important;
-}
-
-.form-edit {
-    font-size: 12px;
-    margin-top: 25px;
 }
 
 .login-button {
@@ -264,24 +373,24 @@ body{
     width: 150%;
 }
 
-.d-flex a {
-    text-decoration: none;
-    color:#7122B5;
-}
-
-.d-flex a:hover {
-    color:#7122B5 !important;
-}
-
 .register .container {
     margin: 0;
     padding: 0;
 }
 
-.register-form {
+.register-part {
     width: 50%;
     margin-left: 100px;
     margin-top: 50px;
+}
+
+.register .btn-eye {
+    margin: 0 auto;
+    border-style: none;
+    background-color: #ffffff;
+    top: 56%;
+    right: 20%;
+    position: absolute;
 }
 
 .register-button {
@@ -298,24 +407,29 @@ body{
 /* end */
 
 /* start buyer/halaman produk */
-.buyer-halaman-produk {
-    margin-top:30px;
+.buyer-halaman-produk .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin:auto;
+    margin-top:20px;
+    width: 80%;
 }
 
 .product-description .card {
-    /* width:50%; */
     background: white;
     margin-top: 20px;
     border-radius: 10px;
     border: 1px solid #ced4da;
     text-align: justify;
     font-size: 14px;
-    padding:5px 5px 0px 5px;
+    padding: 15px 20px 0px 20px;
 }
 
 .about-product .card {
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 15px;
+    margin-left: 30px;
+    box-shadow: rgb(0 0 0 / 15%) 1px 1px 5px 1px;
 }
 
 .bargain-button {
@@ -329,25 +443,44 @@ body{
 }
 
 .about-seller .card {
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
     border-radius: 10px;
-    margin-top:10px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.about-seller .card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about-seller .card-text {
+    color: #8A8A8A;
+    font-size:10px;
+}
+
+/* modal tawar part (still on same page) */
+.bargain-price-btn {
+    background-color: #7126B5;
+    border-style: none;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
     padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.about-seller .seller-detail {
-    margin: 25px 35px 0px 70px;
-    position: absolute;
-}
-
-.about-seller .seller-pic {
-    float: left;
-    margin: 0;
-    padding: 25px 5px 5px 5px;
+.bargain-price-btn a:hover {
+    color: #FFFFFF;
 }
 /* end */
  
 /* start modal for bargain */
-.modal-tawar {
+/* .modal-tawar {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -406,9 +539,9 @@ body{
     text-align: center;
 }
 
-a:hover {
-    color: #ffffff!important;
-}
+.bargain-price-btn a:hover {
+    color: #ffffff !important;
+} */
 /* end */
 
 /* start when bargain process succeed */
