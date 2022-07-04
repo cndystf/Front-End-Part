@@ -2,13 +2,169 @@
 import React from "react";
 import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form'
+import { Link } from 'react-router-dom';
+import { useState } from "react";
+
 import arrow from "../../images/fi_arrow-left.png";
 import rectangle from "../../images/rectangle-purple.png";
 import buyer from "../../images/buyer.png";
 import product from "../../images/exp-product.png";
 import wa from "../../images/fi_whatsapp.svg";
 
+function ModalStatus(props) {
+  
+  const [formData, setFromData] = useState ({
+    choice : ""
+  })
+
+  const handleChange = e => {
+    // e.persist();
+    // console.log(e.target.value);
+
+    // setFromData(prevState => ({
+    //   ...prevState,
+    //   formData: e.target.value
+    // }));
+  };
+
+  // const [modalSuccess, setModalSuccess] = React.useState(false);
+
+  return (
+    <Modal
+      {...props}
+      size="sm"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <div className="modal-status">
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            <span style={{ fontWeight: "bold", fontSize: "14px" }}>Perbarui status penjualan produkmu</span>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Check
+              name="choice"
+              label="Berhasil terjual"
+              value="berhasil_terjual"
+              type="radio"
+              aria-label="radio1"
+              style={{ fontSize: "14px" }}
+              onChange={handleChange} 
+              // checked={formData === "berhasil_terjual"}
+            />
+            <p className="desc-status">Kamu telah sepakat menjual produk ini kepada pembeli</p>
+            <Form.Check
+              name="choice"
+              label="Batalkan transaksi"
+              value="batalkan_transaksi"
+              type="radio"
+              aria-label="radio2"
+              style={{ fontSize: "14px" }}
+              onChange={handleChange} 
+              // checked={formData === "batalkan_transaksi"} 
+            />
+            <p className="desc-status">Kamu membatalkan transaksi produk ini dengan pembeli</p>
+            {/* <button className="status-btn" type="submit" onClick={() => setModalSuccess(true)}>Kirim</button> */}
+            <button className="status-btn" type="submit">Kirim</button>
+          </Form>
+        </Modal.Body>
+        {/* <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+    </Modal.Footer> */}
+      </div>
+    </Modal>
+  )
+}
+
+function ModalTerima(props) {
+  return (
+      <Modal
+        {...props}
+        size="sm"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+              <span style={{ fontWeight : "bold", fontSize: "14px" }}>Yeay kamu berhasil mendapat harga yang sesuai</span>
+              <p style={{ marginTop: "14px", textAlign: "justify", fontSize: "12px", color: "#8a8a8a" }}>Segera hubungi pembeli melalui whatsapp untuk transaksi selanjutnya</p>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <div className="about-bargain">
+          <div className="row p-1">
+            <div className="card">
+              <span style={{ fontWeight:"bold", textAlign:"center", fontSize:"14px"}}>Product Match</span>
+              <div className="info-buyer">
+                <div className="card">
+                  <img src={buyer} alt="buyer" width="48px" height="48px"/>
+                    <div className="card-body">
+                      <span className="card-title">Nama Penawar</span>
+                        <p className="card-text">
+                          Kota
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div className="info-product">
+                <div className="card">
+                  <img src={product} alt="buyer" width="48px" height="48px"/>
+                    <div className="card-body">
+                      <p className="card-text">
+                          Jam Tangan Casio
+                          <br />
+                          <s>Rp 250.000</s>
+                          <br />
+                          Ditawar Rp 200.000
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button className="wa-btn">Hubungi via Whatsapp <img src={wa} alt="wa"/></button>
+          </div>
+        </div>
+        </Modal.Body>
+        {/* <Modal.Footer>
+            <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer> */}
+    </Modal>
+  )
+}
+
+// function ModalSuccess(props) {
+//   return (
+//       <Modal
+//         {...props}
+//         size="sm"
+//         aria-labelledby="contained-modal-title-vcenter"
+//         centered
+//       >
+//         <Modal.Header closeButton>
+//           <Modal.Title id="contained-modal-title-vcenter">
+//               <span style={{ fontWeight : "bold", fontSize: "14px" }}>Yeay kamu berhasil mendapat harga yang sesuai</span>
+//               <p style={{ marginTop: "14px", textAlign: "justify", fontSize: "12px", color: "#8a8a8a" }}>Segera hubungi pembeli melalui whatsapp untuk transaksi selanjutnya</p>
+//           </Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>
+//         </Modal.Body>
+//         {/* <Modal.Footer>
+//             <Button onClick={props.onHide}>Close</Button>
+//         </Modal.Footer> */}
+//     </Modal>
+//   )
+// }
+
 export default function PenawaranDiterima() {
+
+  const [modalStatus, setModalStatus] = React.useState(false);
+  const [modalTerima, setModalTerima] = React.useState(false);
+  
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light d-inline-flex"
@@ -56,13 +212,24 @@ export default function PenawaranDiterima() {
                             </p>
                         </div>
                     </div>
-                    <button className="btn-wa">Hubungi di <img src={wa} alt="wa"/></button>
-                    <button className="btn-status">Status</button>
+                    <button className="btn-wa" onClick={() => setModalTerima(true)}>Hubungi di <img src={wa} alt="wa"/></button>
+                    <button className="btn-status" onClick={() => setModalStatus(true)}>Status</button>
+                </div>
+                <div>
+                  <ModalStatus
+                    show={modalStatus}
+                    onHide={() => setModalStatus(false)}
+                  />
+                </div>
+                <div>
+                  <ModalTerima
+                    show={modalTerima}
+                    onHide={() => setModalTerima(false)}
+                  />
                 </div>
             </div>
         </div>
-      </section>
-      
+      </section>   
     </div>
   )
 }

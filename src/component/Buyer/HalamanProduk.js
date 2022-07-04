@@ -15,8 +15,7 @@ import Navigation from "../Navigation/Navigation";
 
 
 function ModalTawar(props) {
-    // const [modalShow2, setModalShow2] = React.useState(false);
-    
+
     return (
         <Modal
             {...props}
@@ -48,7 +47,7 @@ function ModalTawar(props) {
                             <label for="harga_tawar" class="form-label">Harga Tawar</label>
                             <input type="text" class="form-control " id="harga_tawar" placeholder="Rp 0,00" style={{ borderRadius:"20px" }}/>
                         </div>
-                        <Link to="/bargain-success"><button type="submit" className="bargain-price-btn " onClick={props.onHide}>Kirim</button></Link>
+                        <button type="submit" className="bargain-price-btn " onClick={props.onHide}>Kirim</button>
                     </form>
                 </div>
             </Modal.Body>
