@@ -21,12 +21,14 @@ import { LandingPage, Login, Register, Home } from './component';
 import DaftarJual from './component/DaftarJual/DaftarJual';
 import User from './component/InfoProfil/InfoProfil';
 
+import Product from './component/InfoProduk/InfoProduk';
+import ProdukDiminati from'./component/Seller/ProdukDiminati';
+import InfoPenawar from './component/Seller/InfoPenawar';
+import StatusPenawar from './component/Seller/PenawaranDiterima';
+
 import HalamanProdukBuyer from './component/Buyer/HalamanProduk';
 import HalamanProdukSeller from './component/Seller/HalamanProduk';
-import StatusSuccess from './component/Buyer/StatusSukses';
-
-import Product from './component/InfoProduk/InfoProduk';
-import StatusPenawar from './component/Seller/PenawaranDiterima';
+// import StatusSuccess from './component/Buyer/StatusSukses';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,13 +40,15 @@ root.render(
       <Route path="/home" element={<Home />} />
       <Route path="/list" element={<DaftarJual />} />
       <Route path="/user" element={<User />} />
-      {/* lanjutinn di bawah sini. buat test route/ngeliat page*/}
+      {/* lanjutin di bawah sini. buat test route/ngeliat page*/}
       <Route path="/edit-product" element={<Product />} />
+      <Route path="/diminati" element={<ProdukDiminati />} />
+      <Route path="/info-penawar" element={<InfoPenawar />} />
       <Route path="/penawar" element={<StatusPenawar />} />
-
+      
       <Route path="/seller" element={<HalamanProdukSeller />} />
       <Route path="/buyer" element={<HalamanProdukBuyer />} />
-      <Route path="/bargain-success" element={<StatusSuccess />} />
+      {/* <Route path="/bargain-success" element={<StatusSuccess />} /> */}
 
       {/* Route di bawah ini masih perkiraan */}
       {/* <Route path="/form-product" element={<InfoProduk />} />

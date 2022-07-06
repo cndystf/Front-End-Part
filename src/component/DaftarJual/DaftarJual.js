@@ -69,7 +69,7 @@ export default function DaftarJual() {
                                 <hr style={{ color:'#000000', margin:'0'}} />
                                 </tr>
                                 <tr>
-                                <a href="/terjual">
+                                <a href="#">
                                     <td><FiDollarSign /></td>
                                     <td>Terjual</td>
                                     <td><FiChevronRight /></td>

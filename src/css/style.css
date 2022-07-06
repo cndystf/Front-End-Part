@@ -478,6 +478,7 @@ body{
     color: #FFFFFF;
 }
 /* end */
+
  
 /* modal status */
 .modal-status .modal-header {
@@ -612,7 +613,36 @@ body{
 }
 /* end */
 
-/* Card produk yang ditawar */
+/* page info penawar */
+.btn-decline {
+    margin-right: 20px;
+    width: 150px;
+    float: right;
+    background-color: #ffffff;
+    border-color: #7126B5;
+    border-radius: 30px;
+    color: #7126B5;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-acc {
+    float:right;
+    width:150px;
+    background-color: #7126B5;
+    border-style: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+/* end */
+
+/* page penawaran diterima */
 .bargained-product {
     margin-top: 20px;
 }

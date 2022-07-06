@@ -51,9 +51,6 @@ function ModalTawar(props) {
                     </form>
                 </div>
             </Modal.Body>
-            {/* <Modal.Footer>
-                <Button onClick={props.onHide}>Close</Button>
-            </Modal.Footer> */}
         </Modal>
     )
 }

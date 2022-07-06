@@ -78,7 +78,7 @@ function ModalTerima(props) {
     )
   }
 
-export default function InfoPenawaran () {
+export default function InfoPenawar () {
     const [modalTerima, setModalTerima] = React.useState(false);
 
     return (

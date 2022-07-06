@@ -3,7 +3,7 @@ import sosmed_facebook from '../../images/sosmed-facebook.png';
 import sosmed_instagram from '../../images/sosmed-instagram.png';
 import sosmed_twitter from '../../images/sosmed-twitter.png';
 import sosmed_whatsapp from '../../images/sosmed-whatsapp.png';
-import kotakbiru from '../../images/rectangle-purple.png';
+import kotakungu from '../../images/rectangle-purple.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Footer() {
@@ -37,7 +37,7 @@ export default function Footer() {
                         </div>
                         <div className="col-xl-3 col-md-6 col-sm-12">
                             <p>Copyright Second Hand 2022</p>
-                            <a className="navbar-brand kotakbiru" href="#"><img src={kotakbiru} alt="kotak" /></a>
+                            <a className="navbar-brand kotakungu" href="#"><img src={kotakungu} alt="kotak" /></a>
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                                 aria-label="Toggle navigation">

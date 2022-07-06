@@ -1,4 +1,3 @@
-//page klo penawaran produk diterima seller (yang ada tombol status sama Hub Whatsapp)
 import React from "react";
 import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -80,62 +79,6 @@ function ModalStatus(props) {
   )
 }
 
-function ModalTerima(props) {
-  return (
-      <Modal
-        {...props}
-        size="sm"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-              <span style={{ fontWeight : "bold", fontSize: "14px" }}>Yeay kamu berhasil mendapat harga yang sesuai</span>
-              <p style={{ marginTop: "14px", textAlign: "justify", fontSize: "12px", color: "#8a8a8a" }}>Segera hubungi pembeli melalui whatsapp untuk transaksi selanjutnya</p>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-        <div className="about-bargain">
-          <div className="row p-1">
-            <div className="card">
-              <span style={{ fontWeight:"bold", textAlign:"center", fontSize:"14px"}}>Product Match</span>
-              <div className="info-buyer">
-                <div className="card">
-                  <img src={buyer} alt="buyer" width="48px" height="48px"/>
-                    <div className="card-body">
-                      <span className="card-title">Nama Penawar</span>
-                        <p className="card-text">
-                          Kota
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <div className="info-product">
-                <div className="card">
-                  <img src={product} alt="buyer" width="48px" height="48px"/>
-                    <div className="card-body">
-                      <p className="card-text">
-                          Jam Tangan Casio
-                          <br />
-                          <s>Rp 250.000</s>
-                          <br />
-                          Ditawar Rp 200.000
-                      </p>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <button className="wa-btn">Hubungi via Whatsapp <img src={wa} alt="wa"/></button>
-          </div>
-        </div>
-        </Modal.Body>
-        {/* <Modal.Footer>
-            <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer> */}
-    </Modal>
-  )
-}
-
 // function ModalSuccess(props) {
 //   return (
 //       <Modal
@@ -162,8 +105,6 @@ function ModalTerima(props) {
 export default function PenawaranDiterima() {
 
   const [modalStatus, setModalStatus] = React.useState(false);
-  const [modalTerima, setModalTerima] = React.useState(false);
-  
 
   return (
     <div>
@@ -212,19 +153,13 @@ export default function PenawaranDiterima() {
                             </p>
                         </div>
                     </div>
-                    <button className="btn-wa" onClick={() => setModalTerima(true)}>Hubungi di <img src={wa} alt="wa"/></button>
+                    <button className="btn-wa">Hubungi di <img src={wa} alt="wa"/></button>
                     <button className="btn-status" onClick={() => setModalStatus(true)}>Status</button>
                 </div>
                 <div>
                   <ModalStatus
                     show={modalStatus}
                     onHide={() => setModalStatus(false)}
-                  />
-                </div>
-                <div>
-                  <ModalTerima
-                    show={modalTerima}
-                    onHide={() => setModalTerima(false)}
                   />
                 </div>
             </div>

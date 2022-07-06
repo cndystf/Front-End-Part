@@ -3,8 +3,11 @@ import "../../css/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../Navigation/Navigation";
 import CarouselBanner from "../Carousel/Carousel";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiPlus } from "react-icons/fi";
+import Footer from '../Footer';
 import Rectangle from '../../images/Rectangle 23.png';
+
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -54,11 +57,9 @@ export default function Home() {
                         id="filterKesehatan"
                     > <FiSearch /> Kesehatan
                     </button>
-
                 </div>
-
-
             </div>
+
             <div id="card" className="container">
                 <div className="row">
                     <div className="col-md-4 col-xl-2 col-sm-12">
@@ -133,78 +134,21 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-
                 </div>
-                {/* <div class="row row-cols-6 row-cols-md-6 row-cols-sm-12 g-4" id="cars-container">
-                    <div className="card  " style={{ border: "none" }}>
-                        <div className="d-flex justify-content-center">
-                            <img className="card-img-top center-cropped m-1" src={Rectangle} style={{ height: "100px" }} alt='test' />
-                        </div>
-                        <div class="card-body mb-3">
-                            <h6 class="card-title " style={{ fontsize: '14px' }}>Jam Tangan Casio</h6>
-                            <p className="" style={{ fontsize: '10px' }}>Aksesoris</p>
-                            <p class="" style={{ fontsize: '14px' }}>Rp 250.000</p>
-                        </div>
-                    </div>
-                    <div className="card  " style={{ border: "none" }}>
-                        <div className="d-flex justify-content-center">
-                            <img className="card-img-top center-cropped m-1" src={Rectangle} style={{ height: "100px" }} alt='test' />
-                        </div>
-                        <div class="card-body mb-3">
-                            <h6 class="card-title " style={{ fontsize: '14px' }}>Jam Tangan Casio</h6>
-                            <p className="" style={{ fontsize: '10px' }}>Aksesoris</p>
-                            <p class="" style={{ fontsize: '14px' }}>Rp 250.000</p>
-                        </div>
-                    </div>
-                    <div className="card  " style={{ border: "none" }}>
-                        <div className="d-flex justify-content-center">
-                            <img className="card-img-top center-cropped m-1" src={Rectangle} style={{ height: "100px" }} alt='test' />
-                        </div>
-                        <div class="card-body mb-3">
-                            <h6 class="card-title " style={{ fontsize: '14px' }}>Jam Tangan Casio</h6>
-                            <p className="" style={{ fontsize: '10px' }}>Aksesoris</p>
-                            <p class="" style={{ fontsize: '14px' }}>Rp 250.000</p>
-                        </div>
-                    </div>
-                    <div className="card  " style={{ border: "none" }}>
-                        <div className="d-flex justify-content-center">
-                            <img className="card-img-top center-cropped m-1" src={Rectangle} style={{ height: "100px" }} alt='test' />
-                        </div>
-                        <div class="card-body mb-3">
-                            <h6 class="card-title " style={{ fontsize: '14px' }}>Jam Tangan Casio</h6>
-                            <p className="" style={{ fontsize: '10px' }}>Aksesoris</p>
-                            <p class="" style={{ fontsize: '14px' }}>Rp 250.000</p>
-                        </div>
-                    </div>
-                    <div className="card  " style={{ border: "none" }}>
-                        <div className="d-flex justify-content-center">
-                            <img className="card-img-top center-cropped m-1" src={Rectangle} style={{ height: "100px" }} alt='test' />
-                        </div>
-                        <div class="card-body mb-3">
-                            <h6 class="card-title " style={{ fontsize: '14px' }}>Jam Tangan Casio</h6>
-                            <p className="" style={{ fontsize: '10px' }}>Aksesoris</p>
-                            <p class="" style={{ fontsize: '14px' }}>Rp 250.000</p>
-                        </div>
-                    </div>
-                    <div className="card  " style={{ border: "none" }}>
-                        <div className="d-flex justify-content-center">
-                            <img className="card-img-top center-cropped m-1" src={Rectangle} style={{ height: "100px" }} alt='test' />
-                        </div>
-                        <div class="card-body mb-3">
-                            <h6 class="card-title " style={{ fontsize: '14px' }}>Jam Tangan Casio</h6>
-                            <p className="" style={{ fontsize: '10px' }}>Aksesoris</p>
-                            <p class="" style={{ fontsize: '14px' }}>Rp 250.000</p>
-                        </div>
-                    </div>
-                </div> */}
-                {/* <div class="card">
-                    <img class="card-img-top col-xl-2" src={Rectangle} alt="Cardimagecap" />
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div> */}
+                <div className=" container d-flex justify-content-center sticky ">
+                <Link to="/edit-product">
+                <button
+                    className="btn btn-custom me-3 sticky active buttonradius12"
+                    style={{ width: '115px', heigth: '52px' }}
+                    id="Jual"
+                > <FiPlus /> Jual
+                </button>
+                </Link>
+                </div>
+                <div>
+                    <Footer />
+                </div>
             </div>
         </div>
-
     )
 }
