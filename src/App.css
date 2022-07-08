@@ -1,4 +1,4 @@
-.buttonradius12 {
+/* .buttonradius12 {
   border-radius: 12px !important
 }
 .buttonradius20 {
@@ -9,10 +9,10 @@
 }
 .borderradius8 {
   border-radius: 8px !important;
-}
+} */
 
 /* button filter-landingpage */
-.btn-custom {
+/* .btn-custom {
   color: #3C3C3C;
   background-color: #E2D4F0;
   border-color: #E2D4F0;
@@ -56,16 +56,16 @@ fieldset[disabled] .btn-custom.active {
 .btn-custom .badge {
   color: #3C3C3C;
   background-color: #ffffff;
-}
+} */
 
 /* Carosel */
-.karosel {
+/* .karosel {
   max-width: 100%;
   max-height: 100%
-}
+} */
 
 /* icon panah dropdown */
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
   display: none !important;
 }
 
@@ -94,4 +94,4 @@ fieldset[disabled] .btn-custom.active {
   position: sticky;
   bottom: 0;
   padding: 5px;
-}
+} */

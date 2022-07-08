@@ -1,19 +1,125 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding:0;
 }
+
 body{
-    background: whitesmoke;
+    /* background: whitesmoke; */
+    overflow-x: hidden;
 }
+
+/* bagian indah */
+.buttonradius12 {
+    border-radius: 12px !important
+}
+.buttonradius20 {
+    border-radius: 20px !important
+}
+.buttonradius16 {
+    border-radius: 16px !important
+}
+.borderradius8 {
+    border-radius: 8px !important;
+}
+  
+/* button filter-landingpage */
+.btn-custom {
+    color: #3C3C3C;
+    background-color: #E2D4F0;
+    border-color: #E2D4F0;
+}
+  
+  .btn-custom:hover,
+  .btn-custom:focus,
+  .btn-custom:active,
+  .btn-custom.active,
+  .open .dropdown-toggle.btn-custom {
+    color: #FFFFFF;
+    background-color: #7126B5;
+    border-color: #7126B5;
+  }
+  
+  .btn-custom:active,
+  .btn-custom.active,
+  .open .dropdown-toggle.btn-custom {
+    background-image: none;
+  }
+  
+  .btn-custom.disabled,
+  .btn-custom[disabled],
+  fieldset[disabled] .btn-custom,
+  .btn-custom.disabled:hover,
+  .btn-custom[disabled]:hover,
+  fieldset[disabled] .btn-custom:hover,
+  .btn-custom.disabled:focus,
+  .btn-custom[disabled]:focus,
+  fieldset[disabled] .btn-custom:focus,
+  .btn-custom.disabled:active,
+  .btn-custom[disabled]:active,
+  fieldset[disabled] .btn-custom:active,
+  .btn-custom.disabled.active,
+  .btn-custom[disabled].active,
+  fieldset[disabled] .btn-custom.active {
+    background-color: #7126B5;
+    border-color: #7126B5;
+}
+  
+.btn-custom .badge {
+    color: #3C3C3C;
+    background-color: #ffffff;
+}
+  
+/* Carosel */
+.karosel {
+    max-width: 100%;
+    max-height: 100%
+}
+  
+/* icon panah dropdown */
+.dropdown-toggle::after {
+    display: none !important;
+}
+  
+.dropdown-menu {
+    min-width: 376px;
+}
+
+  .dropdown-item {
+    padding: 10px;
+}
+   
+.notifikasi {
+    border-radius: 0;
+    padding: 0;
+}
+  
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #fff;
+}
+  
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    padding: 5px;
+}
+
 .row{
     background: white;
     border-radius: 30px;
 }
+
 .img1{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
+
 .btn1{
     border: none;
     outline: none;
@@ -24,8 +130,573 @@ body{
     border-radius: 4px;
     font-weight: bold;
 }
+
 .btn1:hover{
     background-color: white;
     border: 1px solid;
     color: rgba(113, 38, 181, 1);
 }
+
+/* daftar jual */
+.info-seller .card {
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info-seller .card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+    
+.info-seller .card-text {
+    color: #8A8A8A;
+    font-size:10px;
+}
+
+.daftar-jual {
+    margin-left: 12px;
+}
+
+.table-category a {
+    color:#000000;
+    text-decoration: none;
+}
+
+.table-category a:hover {
+    color:#7122B5;
+}
+
+.table-category td {
+    padding: 5px;
+}
+
+.button-edit {
+    float: right;
+    border-color: #7122b5;
+    border-radius: 5px;
+    width: 60px;
+    background-color: #ffffff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* start seller/halaman produk */
+.seller-halaman-produk .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin:auto;
+    margin-top:20px;
+    width: 80%;
+}
+
+.btn-publish {
+    background-color: #7126B5;
+    border-style: none;
+    margin: 20px 20px 5px 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-edit {
+    width: 90%;
+    background-color: #ffffff;
+    margin: 5px 20px 20px 20px;
+    border-radius: 10px;
+    border-color: #7126B5;
+    color: #7126B5;
+    padding: 10px;
+    font-size: 14px;
+}
+/* end */
+
+
+
+/* bagian cindy */
+/* start navbar */
+.navbar {
+    background-color: #f5f5f5a1;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.navbar .form-control {
+    background-color: #f5f5f500;
+    border-radius: 10px;
+    font-size: 14px;
+}
+/* end */
+
+/* testing notif */
+#notification {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#notification a {
+    text-decoration: none;
+}
+
+#notification:target {
+    display: block;
+}
+
+.notification-card {
+    position: absolute;
+    width: 60vh;
+    height: 35vh;
+    right: 20px;
+    top: 60px;
+    z-index: 99 !important;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0px 0px 20px;
+    gap: 25px;
+}
+
+.notification .title{
+    font-style: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #8A8A8A;
+    margin-left: 80px;
+    margin-top: -50px;
+}
+
+.notification .date{
+    font-style: normal;
+    font-weight: 400;
+    text-align: right;
+    font-size: 10px;
+    line-height: 14px;
+    width: 240px;
+    margin-left: 77px;
+    color: #8A8A8A;
+    margin-top:-29px;
+}
+
+.notification .detail {
+    position:absolute;
+    font-style: normal;
+    text-align: left;
+    line-height: 10px;
+    font-size:14px;
+    width: 200px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    margin-top: -px; 
+}     
+/* end */
+
+ /* start login & register */
+.title-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-name {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.form-name .form-control {
+    width:150%;
+}
+
+.form-email {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.form-email .form-control {
+    width: 150%;
+}
+
+.form-pw {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.form-pw .form-control {
+    width: 150%;
+}
+
+.login .btn-eye {
+    margin: 0 auto;
+    border-style: none;
+    background-color: #ffffff;
+    top: 52%;
+    right: 20%;
+    position: absolute;
+}
+
+.d-flex a {
+    text-decoration: none;
+    color:#7122B5;
+}
+
+.d-flex a:hover {
+    color:#7122B5 !important;
+}
+
+.login .container {
+    margin:0;
+    padding: 0;
+}
+
+.login-part {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 130px;
+}
+
+.login-button {
+    background-color: #7126B5;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    width: 150%;
+}
+
+.register .container {
+    margin: 0;
+    padding: 0;
+}
+
+.register-part {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.register .btn-eye {
+    margin: 0 auto;
+    border-style: none;
+    background-color: #ffffff;
+    top: 56%;
+    right: 20%;
+    position: absolute;
+}
+
+.register-button {
+    background-color: #7126B5;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    width: 150%;
+}
+/* end */
+
+/* start buyer/halaman produk */
+.buyer-halaman-produk .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin:auto;
+    margin-top:20px;
+    width: 80%;
+}
+
+.product-description .card {
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    text-align: justify;
+    font-size: 14px;
+    padding: 15px 20px 0px 20px;
+}
+
+.about-product .card {
+    border-radius: 25px;
+    padding: 15px;
+    margin-left: 30px;
+    box-shadow: rgb(0 0 0 / 15%) 1px 1px 5px 1px;
+}
+
+.bargain-button {
+    background-color: #7126B5;
+    border-style: none;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.about-seller .card {
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.about-seller .card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about-seller .card-text {
+    color: #8A8A8A;
+    font-size:10px;
+}
+
+/* modal tawar part (still on same page) */
+.bargain-price-btn {
+    background-color: #7126B5;
+    border-style: none;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.bargain-price-btn a:hover {
+    color: #FFFFFF;
+}
+/* end */
+
+ 
+/* modal status */
+.modal-status .modal-header {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.desc-status {
+    padding-left: 1.5rem;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.form-check-input:checked {
+    border-color:#7122B5;
+    background-color:#7122B5;
+}
+
+.status-btn {
+    background-color: #7126B5;
+    border-style: none;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.status-btn a:hover {
+    color: #FFFFFF;
+}
+/* end */
+
+/* modal terima penawaran */
+.about-bargain .card {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    padding: 5px 10px 0px 10px;
+}
+
+.info-buyer .card {
+    flex-direction: row;
+    align-items: center;
+    border-style: none;
+}
+
+.info-buyer .card-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+    
+.info-buyer .card-text {
+    color: #8A8A8A;
+    font-size:10px;
+}
+
+.info-product .card {
+    flex-direction: row;
+    align-items: center;
+    border-style: none;
+}
+    
+.info-product .card-text {
+    font-size:14px;
+}
+
+.wa-btn {
+    background-color: #7126B5;
+    border-style: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-top:20px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+/* end */
+
+/* start when bargain process succeed */
+.success-modal .container{
+    width: 75vh;
+    height: 5vh;
+    border-radius: 12px;
+    display: flex;
+    background-color: #73CA5C;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.close-btn button {
+    border: none;
+    background-color: #73CA5C;
+    color: #ffffff;
+    padding-left: 200px;
+}
+
+.disable-bargain-button {
+    background-color: #D0D0D0;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;        
+    text-decoration: none;
+}
+/* end */
+
+/* Card buyer di bagian page Seller/Penawaran Diterima */
+.about-buyer .card {
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.about-buyer .card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about-buyer .card-text {
+    color: #8A8A8A;
+    font-size:10px;
+}
+/* end */
+
+/* page info penawar */
+.btn-decline {
+    margin-right: 20px;
+    width: 150px;
+    float: right;
+    background-color: #ffffff;
+    border-color: #7126B5;
+    border-radius: 30px;
+    color: #7126B5;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-acc {
+    float:right;
+    width:150px;
+    background-color: #7126B5;
+    border-style: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+/* end */
+
+/* page penawaran diterima */
+.bargained-product {
+    margin-top: 20px;
+}
+
+.bargained-product .card {
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    border: none;
+}
+
+.bargained-product .card-title {
+    color: #8A8A8A;
+    font-size:10px;
+}
+
+.bargained-product .card-time {
+    color: #8A8A8A;
+    font-size:10px;
+    float:right;
+}
+
+.bargained-product .card-text {
+    font-size:16px;
+}
+
+.btn-status {
+    margin-right: 20px;
+    width: 150px;
+    float: right;
+    background-color: #ffffff;
+    border-color: #7126B5;
+    border-radius: 30px;
+    color: #7126B5;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-wa {
+    float:right;
+    width:150px;
+    background-color: #7126B5;
+    border-style: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+/* end */
+
+/* .mr-20 {
+    margin-right: 20px !important;
+  } */

@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import arrow from "../../images/fi_arrow-left.png";
-import Rectangle127 from "../../images/Rectangle127.svg";
+import rectangle from "../../images/rectangle-purple.png";
 import Group1 from "../../images/Group1.png"
 
 export default function InfoProfil() {
@@ -10,7 +10,7 @@ export default function InfoProfil() {
       <nav className="navbar navbar-expand-lg bg-light d-inline-flex"
         style={{ justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
         <div className="d-inline-flex" style={{ padding: '10px', justifyContent: 'center', alignItems: 'center' }}>
-          <a className="navbar-brand" href='/'> <img src={Rectangle127} alt='' />
+          <a className="navbar-brand" href='/home'> <img src={rectangle} alt='' />
           </a>
         </div>
 
@@ -27,7 +27,7 @@ export default function InfoProfil() {
       <section>
         <form>
           <div className="container" style={{ padding: '30px', width: '70%' }}>
-            <a href="/"> <img src={arrow} alt="" /></a>
+            <a href="/home"> <img src={arrow} alt="" /></a>
             <label for="file-input" style={{ justifyContent: 'center', display: 'flex', alignItems: 'center' }}>
               <img src={Group1} alt="" />
             </label>

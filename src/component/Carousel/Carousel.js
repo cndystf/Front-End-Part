@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import carosel1 from '../../images/banner.png'
 import carosel2 from '../../images/banner.png';
-import '../../App.css';
+import "../../css/style.css"
 
 export default function CarouselBanner() {
     return (

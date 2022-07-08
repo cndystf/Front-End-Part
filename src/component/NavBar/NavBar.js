@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import icon from '../../images/kotakbiru.svg';
+import icon from '../../images/rectangle-purple.png';
 import { FiLogIn, FiSearch, FiList, FiBell, FiUser, FiLogOut } from "react-icons/fi";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -58,15 +58,16 @@ export default function NavBar() {
         // </header>
 
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant='light'>
+            {/* <Navbar collapseOnSelect expand="lg" bg="light" variant='light'> */}
+            <Navbar collapseOnSelect expand="lg" variant='light'>
                 <Container>
-                    <Navbar.Brand href="#home"><a href="/"><img src={icon} alt="" /></a></Navbar.Brand>
+                    <Navbar.Brand><a href="/"><img src={icon} alt="" /></a></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#features">
+                            <Nav.Link href="#">
                                 <form className="d-flex border buttonradius12 ">
-                                    <input className="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search"></input>
+                                    <input className="form-control me-2 border-0" type="search" placeholder="Cari di sini ..." aria-label="Cari"></input>
                                     <button className="btn" type="submit"><FiSearch /></button>
                                 </form>
                             </Nav.Link>
@@ -83,8 +84,8 @@ export default function NavBar() {
                                 </Nav.Link>
                             </Nav>
                         ) : (
+                            
                             <Nav>
-
                                 <Nav.Link href="/daftarjual">
                                     <button
                                         type="button"

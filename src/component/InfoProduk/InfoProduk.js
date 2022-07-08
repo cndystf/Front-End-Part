@@ -1,23 +1,23 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Rectangle127 from "../../images/Rectangle127.svg"
+import rectangle from "../../images/rectangle-purple.png"
+import arrow from "../../images/fi_arrow-left.png";
 
 export default function InfoProduk() {
     return (
         <div>
-
+            
             <nav className="navbar navbar-expand-lg bg-light d-inline-flex" style={{ justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                 <div className="d-inline-flex" style={{ padding: '10px', justifyContent: 'center', alignItems: 'center' }}>
-                    <a className="navbar-brand" href="/"><img src={Rectangle127} alt='' />
+                    <a className="navbar-brand" href="/"><img src={rectangle} alt='' />
                     </a>
                 </div>
-
             </nav>
-
 
             <section>
                 <form>
                     <div className="container" style={{ padding: '30px', width: '70%' }}>
+                    <a href="/home"> <img src={arrow} alt="" /></a>
                         <div className="mb-3">
                             <label for="namaproduk" className="form-label">Nama Produk<span style={{ color: 'red' }}>*</span></label>
                             <input type="text" className="form-control" id="namaproduk" placeholder="Nama Produk" required />
