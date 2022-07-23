@@ -20,6 +20,7 @@ import {
 import { LandingPage, Login, Register, Home } from './component';
 import DaftarJual from './component/DaftarJual/DaftarJual';
 import User from './component/InfoProfil/InfoProfil';
+import UbahProfil  from './component/UbahProfil/UbahProfil';
 
 import Product from './component/InfoProduk/InfoProduk';
 import ProdukDiminati from'./component/Seller/ProdukDiminati';
@@ -41,6 +42,7 @@ root.render(
       <Route path="/list" element={<DaftarJual />} />
       <Route path="/user" element={<User />} />
       {/* lanjutin di bawah sini. buat test route/ngeliat page*/}
+      <Route path="/lengkapi-akun" element={<UbahProfil />} />
       <Route path="/edit-product" element={<Product />} />
       <Route path="/diminati" element={<ProdukDiminati />} />
       <Route path="/info-penawar" element={<InfoPenawar />} />

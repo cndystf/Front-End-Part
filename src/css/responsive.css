@@ -1,1 +1,109 @@
 /* ini buat versi mobile/responsive */
+@media only screen and (min-width:1300px) {
+    .navbar .nav-name {
+        display: none;
+    }
+    .btn-back {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:667px) {
+    .navbar .navbar-brand img {
+        display: none;
+    }
+
+    .home {
+        overflow-x: hidden;
+    }
+
+    .home .navbar .navbar-brand img {
+        display: none;
+    }
+
+    .home .karosel.col-10.m-auto {
+        /* display: none !important; */
+        padding:0;
+        margin-top: 10vh!important;
+    }
+
+    .home .col-md-4.col-xl-2.col-sm-12 {
+        width: 50%;
+    }
+
+    .home .container.py-3.d-flex.buttonradius12{
+        overflow-x: auto;
+    }
+
+    /* .home .btn.btn-float.sticky.active.buttonradius12 {
+
+    } */
+/* 
+    .login img {
+        display: none;
+    }
+
+    .login-part {
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        overflow-y: hidden;
+        width: max-content;
+        overflow-x: hidden;
+    }
+
+    .form-name .form-control {
+        width: auto;
+    }
+
+    .form-email .form-control {
+        width: auto;
+    }
+
+    .form-pw .form-control {
+        width: auto;
+    }
+
+    .login-button {
+        width: 87%;
+    }
+
+    .register-button {
+        width: 87%;
+    }
+
+    .login .btn-eye {
+        margin: 0 auto;
+        border-style: none;
+        background-color: white;
+        top: 31.5%;
+        right: 38%;
+        position: absolute;
+    } */
+/* 
+    .form-email .form-control {
+        width: 100%;
+    } */
+
+
+    /* .info-profil .navbar .navbar-brand img {
+        display: none;
+    } */
+
+    .info-profil .container {
+        width: 100% !important;
+    }
+    
+    /* .info-produk .navbar .navbar-brand img {
+        display: none;
+    } */
+
+    .info-produk .container {
+        width: 100% !important;
+    }
+
+    /* .daftar-jual .col-3.card.p-3.mr-2 {
+        display: none;
+    } */
+}

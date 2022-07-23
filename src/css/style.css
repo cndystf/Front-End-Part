@@ -120,6 +120,19 @@ body{
     border-bottom-left-radius: 30px;
 }
 
+.btn-float {
+    color: #ffffff;
+    background-color: #7122B5;
+    border-color: #7122B5;
+}
+
+/* page info produk & info profile*/
+.btn-primary {
+    border-color:#7122B5!important;
+    background-color: #7122b5!important;
+}
+/* end */
+
 .btn1{
     border: none;
     outline: none;
@@ -136,6 +149,25 @@ body{
     border: 1px solid;
     color: rgba(113, 38, 181, 1);
 }
+
+/* info profile */
+.table-profile {
+    margin-top: 20px;
+}
+
+.table-profile a {
+    color:#000000;
+    text-decoration: none;
+}
+
+.table-profile a:hover {
+    color:#7122B5;
+}
+
+.table-profile td {
+    padding: 20px;
+}
+/* end */
 
 /* daftar jual */
 .info-seller .card {
@@ -218,7 +250,7 @@ body{
 /* bagian cindy */
 /* start navbar */
 .navbar {
-    background-color: #f5f5f5a1;
+    /* background-color: #f5f5f5a1; */
     border-bottom: 1px solid #e3e3e3;
 }
 
@@ -226,6 +258,10 @@ body{
     background-color: #f5f5f500;
     border-radius: 10px;
     font-size: 14px;
+}
+
+.navbar .nav-name {
+    padding: 10px;
 }
 /* end */
 
@@ -403,6 +439,11 @@ body{
     font-size: 14px;
     margin-bottom: 50px;
     width: 150%;
+}
+
+.btn-back {
+    color:#7122B5;
+    margin-right: 10px;   
 }
 /* end */
 

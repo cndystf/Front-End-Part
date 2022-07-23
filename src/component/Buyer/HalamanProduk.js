@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import "../../css/style.css"
+import "../../css/responsive.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from "react-bootstrap/Carousel";
 import Modal from "react-bootstrap/Modal";
@@ -62,7 +63,7 @@ export default function BuyerHalamanProduk() {
     return(
         <><Navigation />
         <div className="buyer-halaman-produk">
-            <div className="container">
+            <div className="container" style={{marginTop:"80px"}}>
                 <div className="col-md-6 sm-12" style={{ width:'100%' }}>
                     <Carousel>
                         <Carousel.Item>

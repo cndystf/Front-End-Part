@@ -3,10 +3,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import carosel1 from '../../images/banner.png'
 import carosel2 from '../../images/banner.png';
 import "../../css/style.css"
+import "../../css/responsive.css"
 
 export default function CarouselBanner() {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" style={{marginTop:"80px"}}>
             <div className="row">
                 <div style={{ display: 'block', padding: 30 }} className='karosel col-10 m-auto '>
                     <Carousel>

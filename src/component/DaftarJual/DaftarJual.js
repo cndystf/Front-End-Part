@@ -3,17 +3,15 @@ import Navigation from "../Navigation/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import seller from '../../images/seller.png';
 import "../../css/style.css"
+import "../../css/responsive.css"
 import { FiBox, FiHeart, FiDollarSign, FiChevronRight, FiPlus } from "react-icons/fi";
 import Rectangle from '../../images/Rectangle 23.png';
-
 import { Link } from 'react-router-dom';
-
-
 
 export default function DaftarJual() {
     return (
         <><Navigation />
-        <div className="container">
+        <div className="container" style={{marginTop:"80px"}}>
         <p className="fw-bold my-3">Daftar Jual Saya</p>
             <div className="info-seller">
                 <div className="card">
@@ -24,28 +22,9 @@ export default function DaftarJual() {
                         <p className="card-text">
                             Kota
                         </p>
-                        {/* <div className="col-xl-1 col-sm-3 col-1">
-                            <Link to="/edit-product"><button className="button-edit">edit</button></Link>
-                        </div> */}
                     </div>
                 </div>
             </div>
-            {/* <div className="row">
-                <div className="daftar-jual">
-                    <div className="card">
-                        <div className="col-xl-1 col-sm-1 col-1 pl-2" style={{ width: '50px' }}>
-                            <img src={profilpenjual} alt='profilpenjual' className="img-fluid" style={{ width: '48px' }} />
-                        </div>
-                        <div className="col-xl-10  col-sm-6 col-9">
-                            <p className="fw-bold mb-1" style={{ fontSize: '14px' }}>Nama Penjual</p>
-                            <p className="mb-1" style={{ fontSize: '10px' }}>Kota</p>
-                        </div>
-                        <div className="col-xl-1  col-sm-3 col-1">
-                            <Link to="/edit-product"><button className="btn btn-custom borderradius8">edit</button></Link>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className="daftar-jual">
                 <div className="row my-4 ">
                     <div className="col-3 card  p-3 mr-2" style={{ height : "180px", boxShadow: 'rgb(153 153 153 / 65%) 0px 5px 15px', borderRadius:'20px' }}>

@@ -6,11 +6,12 @@ import sosmed_whatsapp from '../../images/sosmed-whatsapp.png';
 import kotakungu from '../../images/rectangle-purple.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 export default function Footer() {
     return (
         <section id="footer">
             <footer>
-                <div className="container my-3">
+                <div className="container my-3" >
                     <div className="row">
                         <div className="col-xl-6 col-md-6 col-sm-12">
                             <ul className="list-unstyled">

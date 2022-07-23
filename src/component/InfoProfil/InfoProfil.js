@@ -1,12 +1,15 @@
 import React from "react";
+import "../../css/responsive.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import arrow from "../../images/fi_arrow-left.png";
 import rectangle from "../../images/rectangle-purple.png";
 import Group1 from "../../images/Group1.png"
 
+import { FiLogOut, FiSettings, FiEdit3 } from 'react-icons/fi';
+
 export default function InfoProfil() {
   return (
-    <div>
+    <div className="info-profil">
       <nav className="navbar navbar-expand-lg bg-light d-inline-flex"
         style={{ justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
         <div className="d-inline-flex" style={{ padding: '10px', justifyContent: 'center', alignItems: 'center' }}>
@@ -15,14 +18,13 @@ export default function InfoProfil() {
         </div>
 
         <div className="d-inline-flex" style={{ justifyContent: 'center', alignItems: 'center' }}>
-          <span className="navbar-brand mb-0 h1" style={{ fontWeight: '400px' }}>Lengkapi info Akun</span>
+          <span className="navbar-brand mb-0 h1" style={{ fontWeight: '400px' }}>Akun Saya</span>
         </div>
 
         <div className="d-inline-flex" style={{ justifyContent: 'center', alignItems: 'center' }}>
           <span className="navbar-brand mb-0 h1"></span>
         </div>
       </nav>
-
 
       <section>
         <form>
@@ -32,29 +34,44 @@ export default function InfoProfil() {
               <img src={Group1} alt="" />
             </label>
             <input id='file-input' type="file" style={{ display: 'none' }} accept=".jpg,.jpeg,.png" />
-            <div className="mb-3">
-              <label for="nama" className="form-label">Nama<span style={{ color: 'red}' }}>*</span></label>
-              <input type="text" className="form-control" id="nama" placeholder="Nama" required style={{ borderRadius: '16px' }} />
+            {/* <div className="edit-account">
+              <FiEdit3>
+                Ubah Akun
+              </FiEdit3>
             </div>
-            <div className="mb-3">
-              <label for="kota" className="form-label">Kota<span style={{ color: 'red' }}>*</span></label>
-              <select className="form-select" id="kota" required style={{ borderRadius: '16px' }}>
-                <option selected>Pilih Kota</option>
-                <option value="1"> Jakarta</option>
-                <option value="2"> Surabaya</option>
-                <option value="3"> Bandung</option>
-              </select>
+            <div className="setting-account">
+              <FiSettings>
+                Pengaturan Akun
+              </FiSettings>
             </div>
-            <div className="mb-3">
-              <label for="alamat" className="form-label">Alamat<span style={{ color: 'red' }}>*</span></label>
-              <input type="text" className="form-control" id="alamat" placeholder="contoh: Jalan Ikan Hiu 33" required style={{ borderRadius: '16px' }} />
-            </div>
-            <div className="mb-3">
-              <label for="nohp" className="form-label">No. Handphone<span style={{ color: 'red' }}>*</span></label>
-              <input type="number" min='11' className="form-control" id="nohp" placeholder="contoh: 08123456789" required style={{ borderRadius: '16px' }} />
-            </div>
-            <div className="mb-3">
-              <button type="submit" className="btn btn-primary" style={{ width: '100%', backgroundColor: '#7126B5', borderRadius: '16px' }}>Simpan</button>
+            <div className="logout">
+              <FiLogOut>
+                Logout
+              </FiLogOut>
+            </div> */}
+            <div className="table-profile">
+              <table>
+                <tr>
+                  <a href="/lengkapi-akun">
+                  <td><FiEdit3 /></td>
+                  <td>Ubah Akun</td>
+                  </a>
+                  {/* <hr style={{ width:'1000px', color:'#000000', margin:'0'}} /> */}
+                </tr>
+                <tr>
+                  <a href="#">
+                  <td><FiSettings /></td>
+                  <td>Pengaturan Akun</td>
+                  </a>
+                  {/* <hr style={{ color:'#000000', margin:'0'}} /> */}
+                </tr>
+                <tr>
+                  <a href="/logout">
+                    <td><FiLogOut /></td>
+                    <td>Logout</td>
+                    </a>
+                </tr>
+              </table>
             </div>
           </div>
         </form>

@@ -1,12 +1,12 @@
 // import React from 'react';
 import banner from "../../images/secondhand.png";
 import "../../css/style.css";
+import "../../css/responsive.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Register from './components/Register';
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import { BsEyeSlash } from "react-icons/bs";
-import { BsEye } from "react-icons/bs";
+import { FiEye, FiEyeOff, FiArrowBack, FiArrowLeft } from 'react-icons/fi';
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 const axios = require("axios").default;
@@ -50,16 +50,18 @@ export default function Login() {
                     </div>
                     <div className="col-md-6 sm-12">
                         <div className="login-part">
+                            <Link to='/'><span className="btn-back"><FiArrowLeft /></span></Link>
                             <span className="title-text">Masuk</span>
-                            <div className="form-email">
-                                <label for="form_email" className="form-label">
+                            {/* <form> */}
+                            <div className="form-name">
+                                <label for="form_name" className="form-label">
                                     Username
                                 </label>
                                 <input
-                                    type="email"
+                                    type="text"
                                     className="form-control py-3"
-                                    placeholder="Contoh: johndee@gmail.com"
-                                    aria-label="Email"
+                                    placeholder="Masukkan Username"
+                                    aria-label="Name"
                                     onChange={(event) =>
                                         setUserName(event.target.value)
                                     }
@@ -73,7 +75,7 @@ export default function Login() {
                                     Password
                                 </label>
                                 <input
-                                    type={showPassword ? "password" : "text"}
+                                    type={showPassword ? "text" : "password"}
                                     className="form-control py-3"
                                     placeholder="Masukkan Password"
                                     aria-label="Password"
@@ -83,16 +85,17 @@ export default function Login() {
                                 />
                                 <button className="btn-eye">
                                     {showPassword ? (
-                                        <BsEyeSlash
+                                        <FiEyeOff
                                             onClick={checkShowPassword}
                                         />
                                     ) : (
-                                        <BsEye onClick={checkShowPassword} />
+                                        <FiEye onClick={checkShowPassword} />
                                     )}
                                 </button>
                             </div>
                             {/* <Link to="/home"> */}
                             <button
+                                // type="submit"
                                 className="login-button"
                                 onClick={() => login()}
                             >
@@ -104,6 +107,7 @@ export default function Login() {
                                 <Link to="/register">Daftar di sini</Link>
                                 {/* <h6>Belum punya akun?</h6> <Link to="/register"><span style={{color:"#7126B5"}}>Daftar di sini</span></Link> */}
                             </div>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>
