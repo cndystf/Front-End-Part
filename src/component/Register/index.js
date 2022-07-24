@@ -54,7 +54,7 @@ export default function Register() {
                         <div className="register-part">
                         <Link to='/'><span className="btn-back"><FiArrowLeft /></span></Link>
                             <span className="title-text">Daftar</span>
-                            {/* <form> */}
+                            {/* <form onSubmit={register}> */}
                             <div className="form-name">
                                 <label for="form_name" className="form-label">
                                     Username
@@ -111,7 +111,7 @@ export default function Register() {
                             </div>
                             {/* <Link to="/login"> */}
                             <button
-                                type="submit"
+                                // type="submit"
                                 className="register-button"
                                 onClick={() => register()}
                             >
