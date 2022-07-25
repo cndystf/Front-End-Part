@@ -1,11 +1,13 @@
 import React from "react";
-import "../../css/style.css"
+import "../../css/style.css";
+import "../../css/responsive.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "../Navigation/Navigation";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
+import axios from "axios";
 
 import jam from "../../images/halamanproduk.png";
 import exp from "../../images/exp-product.png";
@@ -73,7 +75,7 @@ export default function HalamanProduk() {
     // const [modalShow, setModalShow] = React.useState(false);
     return (
         <><Navigation /><div className="seller-halaman-produk">
-            <div className="container">
+            <div className="container" style={{marginTop:"80px"}}>
                 <div className="col-md-6 sm-12" style={{ width: '100%' }}>
                     <Carousel>
                         <Carousel.Item>

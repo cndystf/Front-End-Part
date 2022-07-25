@@ -1,16 +1,19 @@
 import React from "react";
 import "../../css/style.css"
+import "../../css/responsive.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "../NavBar/NavBar";
 import CarouselBanner from "../Carousel/Carousel";
 import { FiSearch, FiPlus } from "react-icons/fi";
+// import Fab from "@mui/material/Fab";
 import Footer from '../Footer';
 import Rectangle from '../../images/Rectangle 23.png';
 
+import { Link } from 'react-router-dom';
 
 export default function LandingPage() {
     return (
-        <div>
+        <div className="landing-page">
             <div>
                 <NavBar />
             </div>
@@ -58,7 +61,7 @@ export default function LandingPage() {
                     </button>
                 </div>
             </div>
-            
+
             <div id="card" className="container">
                 <div className="row">
                     <div className="col-md-4 col-xl-2 col-sm-12">
@@ -135,13 +138,19 @@ export default function LandingPage() {
                     </div>
                 </div>
                 <div className=" container d-flex justify-content-center sticky ">
-                <button
-                    className="btn btn-custom me-3 sticky active buttonradius12"
+                <Link to="/edit-product">
+                    {/* <Fab variant="extended" style={{ color:'#fffff', backgroundColor:'7122b5', borderColor:'7122b5'}}>
+                        <FiPlus sx={{ mr: 1 }} />
+                        Jual
+                    </Fab> */}
+                    <button
+                    // className="btn btn-custom me-3 sticky active buttonradius12"
+                    className="btn btn-float sticky active buttonradius12"
                     style={{ width: '115px', heigth: '52px' }}
-                    onclick="/"
                     id="Jual"
-                > <FiPlus /> Jual
-                </button>
+                    > <FiPlus /> Jual
+                    </button>
+                </Link>
                 </div>
                 <div>
                     <Footer />

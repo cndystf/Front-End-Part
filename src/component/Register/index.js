@@ -1,12 +1,12 @@
 // import React from 'react';
 import banner from "../../images/secondhand.png";
 import "../../css/style.css";
+import "../../css/responsive.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Register from './components/Register';
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import { BsEyeSlash } from "react-icons/bs";
-import { BsEye } from "react-icons/bs";
+import { FiEye, FiEyeOff, FiArrowBack, FiArrowLeft } from 'react-icons/fi';
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
 const axios = require("axios").default;
@@ -52,15 +52,17 @@ export default function Register() {
                     </div>
                     <div className="col-md-6 sm-12">
                         <div className="register-part">
+                        <Link to='/'><span className="btn-back"><FiArrowLeft /></span></Link>
                             <span className="title-text">Daftar</span>
+                            {/* <form onSubmit={register}> */}
                             <div className="form-name">
                                 <label for="form_name" className="form-label">
-                                    Nama
+                                    Username
                                 </label>
                                 <input
                                     type="text"
                                     className="form-control py-3"
-                                    placeholder="Nama Lengkap"
+                                    placeholder="Masukkan Username"
                                     aria-label="Name"
                                     onChange={(event) =>
                                         setUserName(event.target.value)
@@ -89,7 +91,7 @@ export default function Register() {
                                     Password
                                 </label>
                                 <input
-                                    type={showPassword ? "password" : "text"}
+                                    type={showPassword ? "text" : "password"}
                                     className="form-control py-3"
                                     placeholder="Masukkan Password"
                                     aria-label="Password"
@@ -99,16 +101,17 @@ export default function Register() {
                                 />
                                 <button className="btn-eye">
                                     {showPassword ? (
-                                        <BsEyeSlash
+                                        <FiEyeOff
                                             onClick={checkShowPassword}
                                         />
                                     ) : (
-                                        <BsEye onClick={checkShowPassword} />
+                                        <FiEye onClick={checkShowPassword} />
                                     )}
                                 </button>
                             </div>
                             {/* <Link to="/login"> */}
                             <button
+                                // type="submit"
                                 className="register-button"
                                 onClick={() => register()}
                             >
@@ -120,6 +123,7 @@ export default function Register() {
                                 <Link to="/login">Masuk di sini</Link>
                                 {/* <h6>Belum punya akun?</h6> <Link to="/register"><span style={{color:"#7126B5"}}>Daftar di sini</span></Link> */}
                             </div>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>

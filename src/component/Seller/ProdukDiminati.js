@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../Navigation/Navigation";
 import "../../css/style.css"
+import "../../css/responsive.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FiBox, FiHeart, FiDollarSign, FiChevronRight, FiPlus } from "react-icons/fi";
 import Rectangle from '../../images/Rectangle 23.png';
@@ -11,7 +12,7 @@ import { Link } from 'react-router-dom';
 export default function ProdukDiminati() {
     return (
         <><Navigation />
-        <div className="container">
+        <div className="container" style={{marginTop:"80px"}}>
         <p className="fw-bold my-3">Daftar Jual Saya</p>
             <div className="info-seller">
                 <div className="card">
