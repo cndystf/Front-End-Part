@@ -109,7 +109,7 @@ export default function Register() {
                                     )}
                                 </button>
                             </div>
-                            {/* <Link to="/login"> */}
+                            <Link to="/login">
                             <button
                                 // type="submit"
                                 className="register-button"
@@ -117,7 +117,7 @@ export default function Register() {
                             >
                                 Daftar
                             </button>
-                            {/* </Link> */}
+                            </Link>
                             <div className="d-flex">
                                 <p className="mb-0 me-2">Sudah punya akun?</p>
                                 <Link to="/login">Masuk di sini</Link>

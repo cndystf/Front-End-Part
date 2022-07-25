@@ -4,10 +4,52 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import arrow from "../../images/fi_arrow-left.png";
 import rectangle from "../../images/rectangle-purple.png";
 import Group1 from "../../images/Group1.png"
-
+import axios from "axios";
+import { useState, useEffect } from 'react'
 import { FiLogOut, FiSettings, FiEdit3 } from 'react-icons/fi';
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 export default function InfoProfil() {
+  // const [data, setdata] = useState(null);
+  // const [isLoading, setisLoading] = useState(false);
+  // const [isError, setisError] = useState(false);
+
+  // useEffect(() => {
+  //   setisLoading(true);
+  //    axios
+  //   .get("https://second-hand-binar.herokuapp.com/api/user/list")
+  //   .then(function (response) {
+  //     console.log(response);
+  //     cookies.set("jwt", response.data.data.token, {
+  //         path: "/",
+  //         expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+  //     });
+  // })
+  //   .catch(function (error) {
+  //     console.log(error.response.data);
+  //   });
+  // }, []);
+     
+//   const logout = () => {
+//     axios
+//         .get("https://second-hand-binar.herokuapp.com/api/user/logout", {
+//             username: userName
+//         })
+//         .then(function (response) {
+//             console.log(response);
+//             cookies.set("jwt", response.data.data.token, {
+//                 path: "/",
+//                 expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+//             });
+//         })
+//         .catch(function (error) {
+//             console.log(error.response.data);
+//         });
+// };
+  // if (isLoading) return <h1>No User Found</h1>;
+  // else if (data && !isError)
+
   return (
     <div className="info-profil">
       <nav className="navbar navbar-expand-lg bg-light d-inline-flex"
@@ -27,28 +69,13 @@ export default function InfoProfil() {
       </nav>
 
       <section>
-        <form>
-          <div className="container" style={{ padding: '30px', width: '70%' }}>
-            <a href="/home"> <img src={arrow} alt="" /></a>
-            <label for="file-input" style={{ justifyContent: 'center', display: 'flex', alignItems: 'center' }}>
-              <img src={Group1} alt="" />
-            </label>
-            <input id='file-input' type="file" style={{ display: 'none' }} accept=".jpg,.jpeg,.png" />
-            {/* <div className="edit-account">
-              <FiEdit3>
-                Ubah Akun
-              </FiEdit3>
-            </div>
-            <div className="setting-account">
-              <FiSettings>
-                Pengaturan Akun
-              </FiSettings>
-            </div>
-            <div className="logout">
-              <FiLogOut>
-                Logout
-              </FiLogOut>
-            </div> */}
+        <div className="container" style={{ padding: '30px', width: '70%' }}>
+          <a href="/home"> <img src={arrow} alt="" /></a>
+          <label for="file-input" style={{ justifyContent: 'center', display: 'flex', alignItems: 'center' }}>
+            <img src={Group1} alt="" />
+          </label>
+          <input id='file-input' type="file" style={{ display: 'none' }} accept=".jpg,.jpeg,.png" />
+          <h2>Halo!</h2>
             <div className="table-profile">
               <table>
                 <tr>
@@ -56,27 +83,23 @@ export default function InfoProfil() {
                   <td><FiEdit3 /></td>
                   <td>Ubah Akun</td>
                   </a>
-                  {/* <hr style={{ width:'1000px', color:'#000000', margin:'0'}} /> */}
                 </tr>
                 <tr>
                   <a href="#">
                   <td><FiSettings /></td>
                   <td>Pengaturan Akun</td>
                   </a>
-                  {/* <hr style={{ color:'#000000', margin:'0'}} /> */}
                 </tr>
                 <tr>
                   <a href="/logout">
                     <td><FiLogOut /></td>
                     <td>Logout</td>
-                    </a>
+                  </a>
                 </tr>
               </table>
             </div>
           </div>
-        </form>
-      </section>
-
+        </section>
     </div>
   )
 }

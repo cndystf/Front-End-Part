@@ -93,7 +93,7 @@ export default function Login() {
                                     )}
                                 </button>
                             </div>
-                            {/* <Link to="/home"> */}
+                            <Link to="/home">
                             <button
                                 // type="submit"
                                 className="login-button"
@@ -101,7 +101,7 @@ export default function Login() {
                             >
                                 Masuk
                             </button>
-                            {/* </Link> */}
+                            </Link>
                             <div className="d-flex">
                                 <p className="mb-0 me-2">Belum punya akun?</p>
                                 <Link to="/register">Daftar di sini</Link>
